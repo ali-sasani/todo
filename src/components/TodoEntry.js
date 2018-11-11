@@ -6,7 +6,6 @@ class TodoEntry extends Component {
   state = {
     value: "",
     type: "",
-    // time: "",
     categ: ""
   };
   addCateg = event => {
@@ -26,9 +25,6 @@ class TodoEntry extends Component {
     }
     if (this.state.value) {
       var time = new Date();
-      //  this.setState({
-      //    time: time.toLocaleString()
-      //  })
 
       event.preventDefault();
 
@@ -78,7 +74,7 @@ class TodoEntry extends Component {
           onKeyDown={event => this.handleKeyDown(event)}
           type="text"
           className="new-todo"
-          placeholder="what nedds?"
+          placeholder="what needs?"
         />
       </header>
     );
