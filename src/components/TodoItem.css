@@ -1,0 +1,9 @@
+.type {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 14px;
+    font-size: 14px;
+    background-color: rgb(109, 174, 219);
+    color: rgb(255, 255, 255);
+}
