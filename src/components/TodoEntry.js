@@ -42,7 +42,7 @@ class TodoEntry extends Component {
     return (
       <header className="header">
         <h1>Todo</h1>
-        <div style={{display: "flex", alignItems: "center"}}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <div className="styled-select yellow rounded">
             <select
               ref="imageType"
@@ -59,7 +59,8 @@ class TodoEntry extends Component {
               })}
             </select>
           </div>
-          <input style={{paddingLeft: "3px", borderRadius: "4px"}}
+          <input
+            style={{ paddingLeft: "3px", borderRadius: "4px" }}
             value={this.state.categ}
             onChange={event => this.setState({ categ: event.target.value })}
             onKeyDown={event => this.addCateg(event)}

@@ -13,11 +13,11 @@ class TodoItem extends Component {
     const { todo } = this.props;
     return (
       <li className={todo.completed ? "completed" : ""}>
-        <div className="view" style={{display: 'flex', alignItems: 'center'}}>
+        <div className="view" style={{ display: "flex", alignItems: "center" }}>
           <input
             onChange={this.onToggle}
             type="checkbox"
-            className="toggle" 
+            className="toggle"
             value="on"
             checked={todo.completed}
           />
@@ -37,7 +37,7 @@ class TodoItem extends Component {
           </label>
           <label style={{ fontSize: "12px" }}>{todo.time}</label>
           <button
-          style={{display: "inline-block"}}
+            style={{ display: "inline-block" }}
             className="destroy"
             onClick={() => todoStore.setDelete(todo.id)}
           />
